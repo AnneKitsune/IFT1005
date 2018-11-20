@@ -146,7 +146,6 @@ td:nth-of-type(2) {
 }
 
 form { 
-  /* margin-top: 15px; */
   min-width: 325px;	
 }
 
@@ -162,6 +161,14 @@ input, textarea {
   margin-bottom: 10px; 
   display: block;
 } 
+
+#myNuits {
+  width: 80px;
+}
+
+#myDateArrivee {
+  width: 140px;
+}
 
 /* Alignment of 'Soumettre' */
 #mySubmit {
