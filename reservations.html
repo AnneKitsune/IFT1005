@@ -1,0 +1,79 @@
+<!-- Joël Lupien -->
+<!-- Marc Grenier -->
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Complexe Santa Maria</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <div id="wrapper">
+      <div id="titleholder">
+        <h1>Complexe Santa Maria</h1>
+      </div>
+      <div id="content">
+        <nav>
+          <ul id="links">
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./yourtes.html">Yourtes</a></li>
+            <li><a href="#">Activités</a></li>
+            <li><a href="./reservations.html">Réservations</a></li>
+          </ul>
+        </nav>
+        <div id="column-right">
+          <main>
+            <h2>Réservations au Complexe Santa Maria</h2>
+            <h2 class="forfait">Contactez nous</h2>
+            <p>Les informations obligatoires sont marqués d'un astérisque (*).</p>
+
+            <form method="post" action="http://www-etud.iro.umontreal.ca/~chartral/ift1005/form_print.php">
+
+              <label for="myPrenom">* Prénom:</label>
+              <input type="text" name="myPrenom" id="myPrenom"
+              required="required">
+              
+              <label for="myNom">* Nom:</label>
+              <input type="text" name="myNom" id="myNom"
+              required="required">
+              
+              <label for="myEmail">* Email:</label>
+              <input type="email" name="myEmail" id="myEmail"
+              required="required">
+
+              <label for="myTel">Téléphone:</label>
+              <input type="tel" name="myTel" id="myTel">
+
+              
+              <label for="myDateArrivee">Date d'arrivée:</label>
+              <input type="date" name="myDateArrivee" id="myDateArrivee" 
+              placeholder="yyyy-mm-dd">
+              
+              <label for="myNuits">Nuits:</label>
+              <input type="number" name="myNuits" id="myNuits">
+
+              <label for="myCommentaires">* Commentaires:</label>
+              <textarea name="myCommentaires" id="myCommentaires" 
+              rows="2" cols="20" required="required"></textarea>
+
+              <input id="mySubmit" type="submit" value="Soumettre">
+
+            </form>
+          </main>
+
+          <footer>
+            <i>
+              <small>
+                Copyright &copy; 2018 Complexe Santa Maria<br>
+                <a href="mailto:joel.lupien2@gmail.com">joel.lupien2@gmail.com</a><br>
+                <a href="https://github.com/jojolepro">https://github.com/jojolepro</a>
+              </small>
+            </i>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -62,7 +62,7 @@ a:visited {
   color: #000000;
 }
 
-p, ul, dd, footer {
+p, ul, dd, footer, label {
   color: #666666;
 }
 
@@ -128,7 +128,7 @@ td {
   text-align: center;
 }
 
-/* overringding de center pour la colonne 'Description' */
+/* overriding de center pour la colonne 'Description' */
 td:nth-of-type(2) {
   text-align: left;
 }
@@ -145,6 +145,28 @@ td:nth-of-type(2) {
   color: #000033;  
 }
 
+form { 
+  /* margin-top: 15px; */
+  min-width: 325px;	
+}
+
+label {
+  float: left;
+  width: 155px; 
+  margin-bottom: 10px; 
+  text-align: left; 
+  padding-right: 10px;
+}
+
+input, textarea { 
+  margin-bottom: 10px; 
+  display: block;
+} 
+
+/* Alignment of 'Soumettre' */
+#mySubmit {
+  margin-left: 140px; 
+}
 
 footer {
   text-align: center;
