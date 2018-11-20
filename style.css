@@ -105,6 +105,41 @@ img {
   padding: 0;
 }
 
+table {
+  width: 90%;
+  margin: auto;
+  border: 1px solid #3399CC;
+  border-collapse: collapse;
+}
+
+/* couleur subtile des rangees 2 et 4 de la table */
+tr:nth-child(even) {
+  background: ghostwhite;
+}
+
+th {
+  border: 1px solid #3399CC;
+  padding: .25em; 
+}
+
+td {
+  border: 1px solid #3399CC;
+  padding: .25em; 
+  text-align: center;
+}
+
+/* overringding de center pour la colonne 'Description' */
+td:nth-of-type(2) {
+  text-align: left;
+}
+
+/* overrinding des <h2> sur yourtes.html et activites.html  */
+.forfait {
+  font-family: Verdana, Arial, Sans-serif;
+  font-size: 1.2em;
+  color: #000033;
+}
+
 .companyname {
   font-size: 1.2em;
   color: #000033;  
