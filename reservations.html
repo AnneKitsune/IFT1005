@@ -44,14 +44,15 @@
               required="required">
 
               <label for="myTel">Téléphone:</label>
-              <input type="tel" name="myTel" id="myTel">
+              <input type="tel" name="myTel" id="myTel" pattern="\d+">
 
               
               <label for="myDateArrivee">Date d'arrivée:</label>
               <input type="date" name="myDateArrivee" id="myDateArrivee">
               
               <label for="myNuits">Nuits:</label>
-              <input type="number" name="myNuits" id="myNuits">
+              <input type="number" name="myNuits" id="myNuits" min="1">
+
 
               <label for="myCommentaires">* Commentaires:</label>
               <textarea name="myCommentaires" id="myCommentaires" 
