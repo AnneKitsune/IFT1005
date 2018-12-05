@@ -7,10 +7,11 @@
     <title>Complexe Santa Maria</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <link rel="script" type="text/javascript" href="date.js">
   </head>
   
   <body>
+    <script src="verifydate.js"></script>
+
     <div id="wrapper">
       <div id="titleholder">
         <h1>Complexe Santa Maria</h1>
@@ -30,8 +31,8 @@
             <h2 class="forfait">Contactez nous</h2>
             <p>Les informations obligatoires sont marquées d'un astérisque (*).</p>
 
-            <form method="post" action="http://www-etud.iro.umontreal.ca/~chartral/ift1005/form_print.php">
-
+            <form method="post" onsubmit="return verifyDate(event)" action="http://www-etud.iro.umontreal.ca/~chartral/ift1005/form_print.php">
+              
               <label for="myPrenom">* Prénom:</label>
               <input type="text" name="myPrenom" id="myPrenom"
               required="required">
@@ -47,9 +48,9 @@
               <label for="myTel">Téléphone:</label>
               <input type="tel" name="myTel" id="myTel" pattern="\d+">
 
-              
+              <h4 id="dateerr" hidden>Date Invalide!</h4>
               <label for="myDateArrivee">Date d'arrivée:</label>
-              <input type="date" name="myDateArrivee" id="myDateArrivee">
+              <input type="date" name="myDateArrivee" id="myDateArrivee" required>
               
               <label for="myNuits">Nuits:</label>
               <input type="number" name="myNuits" id="myNuits" min="1">
